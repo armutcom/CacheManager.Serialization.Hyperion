@@ -12,12 +12,10 @@
 To install CacheManager.Serialization.Hyperion, run the following command in the Package Manager Console
 
 ```
-Install-Package Armut.Iyzipay
+Install-Package CacheManager.Serialization.Hyperion
 ```
 
 ## Usage
-
-Start of by installing the `CacheManager.Serialization.Hyperion` nuget
 
 `WithHyperionSerializer` extension method can be used as below
 
