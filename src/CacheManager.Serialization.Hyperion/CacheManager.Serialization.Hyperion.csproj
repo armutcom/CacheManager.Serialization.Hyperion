@@ -31,7 +31,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CacheManager.Core" Version="1.1.2" />
+    <PackageReference Include="CacheManager.Core" Version="1.2.0" />
     <PackageReference Include="Hyperion" Version="0.9.8" />
   </ItemGroup>
 
