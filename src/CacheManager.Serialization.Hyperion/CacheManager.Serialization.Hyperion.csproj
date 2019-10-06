@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net452;netstandard2.0;netstandard1.6</TargetFrameworks>
+    <TargetFrameworks>net452;netstandard2.1;netstandard2.0;netstandard1.6</TargetFrameworks>
 
     <Version>1.1.0</Version>
 
@@ -32,7 +32,7 @@
 
   <ItemGroup>
     <PackageReference Include="CacheManager.Core" Version="1.2.0" />
-    <PackageReference Include="Hyperion" Version="0.9.8" />
+    <PackageReference Include="Hyperion" Version="0.9.9" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
