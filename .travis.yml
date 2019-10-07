@@ -1,14 +1,10 @@
 language: csharp  
 sudo: required  
-dist: trusty  
+dist: bionic  
 env:  
   - CLI_VERSION=latest
-matrix:
-  include:
-    - dotnet: 3.0.100
-      mono: none
-      env: DOTNETCORE=3  # optional, can be used to take different code paths in your script
-    - mono: 5.10.0
+mono: latest
+dotnet:  3.0.100
 os:  
   - linux
 branches:  
@@ -21,8 +17,3 @@ before_install:
   - sudo apt install nuget
 script:  
   - ./build.sh
-addons:
-  apt:
-    sources:
-    - sourceline: 'deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ trusty main'
-      key_url: 'https://apt-mo.trafficmanager.net/keys/microsoft.asc'
