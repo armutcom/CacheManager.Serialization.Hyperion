@@ -3,9 +3,12 @@ sudo: required
 dist: trusty  
 env:  
   - CLI_VERSION=latest
-mono:  
-  - 5.10.0
-dotnet:  3.0.100
+matrix:
+  include:
+    - dotnet: 3.0.100
+      mono: none
+      env: DOTNETCORE=3  # optional, can be used to take different code paths in your script
+    - mono: 5.10.0
 os:  
   - linux
 branches:  
