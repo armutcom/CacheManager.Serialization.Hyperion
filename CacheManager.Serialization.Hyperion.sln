@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2015
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{21935C9B-19A3-40BD-B849-C2FA6FCEC3FF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{21935C9B-19A3-40BD-B849-C2FA6FCEC3FF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheManager.Serialization.Hyperion.Tests", "Tests\CacheManager.Serialization.Hyperion.Tests\CacheManager.Serialization.Hyperion.Tests.csproj", "{88E9C4AC-525F-4A30-A9C0-D13885DD863B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheManager.Serialization.Hyperion.Tests", "tests\CacheManager.Serialization.Hyperion.Tests\CacheManager.Serialization.Hyperion.Tests.csproj", "{88E9C4AC-525F-4A30-A9C0-D13885DD863B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheManager.Serialization.Hyperion", "CacheManager.Serialization.Hyperion\CacheManager.Serialization.Hyperion.csproj", "{BE983419-8B0B-4721-9B6A-7CBEBFB188B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheManager.Serialization.Hyperion", "src\CacheManager.Serialization.Hyperion\CacheManager.Serialization.Hyperion.csproj", "{BE983419-8B0B-4721-9B6A-7CBEBFB188B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E4A59BF7-9379-4BA8-B10A-03411BE33F15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{88E9C4AC-525F-4A30-A9C0-D13885DD863B} = {21935C9B-19A3-40BD-B849-C2FA6FCEC3FF}
+		{BE983419-8B0B-4721-9B6A-7CBEBFB188B1} = {E4A59BF7-9379-4BA8-B10A-03411BE33F15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8C86A46-31C6-46E2-8D31-712AF4AEDFB9}
