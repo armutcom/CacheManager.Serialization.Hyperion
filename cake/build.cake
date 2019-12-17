@@ -6,7 +6,7 @@ using System.Diagnostics;
 // Variables
 var configuration = "Release";
 var fullFrameworkTarget = "net45";
-var netCoreTarget31 = "netcoreapp3.1";
+var netCoreTarget30 = "netcoreapp3.0";
 
 var projects = GetFiles("**/*.csproj");
 string testProjectPath = "../tests/CacheManager.Serialization.Hyperion.Tests/CacheManager.Serialization.Hyperion.Tests.csproj";
@@ -50,13 +50,13 @@ Task("Build")
         } 
     });
 
-Task("NetCore3.1Tests")
+Task("NetCore3.0Tests")
     .IsDependentOn("Build")
     .Does(() => {
         DotNetCoreTestSettings settings = new DotNetCoreTestSettings
         {
             Configuration = configuration,
-            Framework = netCoreTarget31
+            Framework = netCoreTarget30
         };
         DotNetCoreTest(testProjectPath, settings);
     });
@@ -93,7 +93,7 @@ Task("NetFramework4.5Tests")
     });
 
 Task("Test")
-    .IsDependentOn("NetCore3.1Tests")
+    .IsDependentOn("NetCore3.0Tests")
     .IsDependentOn("NetFramework4.5Tests");
 
 Task("Nuget-Pack")
